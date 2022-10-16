@@ -1,1 +1,45 @@
-{}
+{
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "Combat",
+            "id": "b8a75b09-3fc9-4deb-bbe9-4a0db20fb2a2",
+            "actions": [
+                {
+                    "name": "SingleHit",
+                    "type": "Button",
+                    "id": "97df06ca-0e93-4de7-9921-404476b41550",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4ca89c29-802e-425a-8e66-92acf833b399",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SingleHit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6003bcc4-c16f-46ee-9977-1ea5ef5b0380",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SingleHit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
