@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class BacktoScan : MonoBehaviour
 {
-    void Start(){
+    void Start()
+    {
         this.GetComponent<Button>().onClick.AddListener(SwitchScene);
     }
 
-    void SwitchScene(){
-        SceneManager.LoadScene("MainScene1016");
+    void SwitchScene()
+    {
+        SceneManager.LoadScene("MainScene1018");
     }
 }

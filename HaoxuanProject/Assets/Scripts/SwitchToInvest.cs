@@ -12,6 +12,6 @@ public class SwitchToInvest : MonoBehaviour
     }
 
     void SwitchScene(){
-        SceneManager.LoadScene("InvestigationScene1016");
+        SceneManager.LoadScene("InvestigationScene1018");
     }
 }
