@@ -11,7 +11,8 @@ public class SwitchToInvest : MonoBehaviour
         this.GetComponent<Button>().onClick.AddListener(SwitchScene);
     }
 
-    void SwitchScene(){
-        SceneManager.LoadScene("InvestigationScene1018");
+    void SwitchScene()
+    {
+        SceneManager.LoadScene("InvestigationScene1020");
     }
 }

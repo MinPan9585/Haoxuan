@@ -14,6 +14,6 @@ public class InvestToBattle : MonoBehaviour
 
     void FromInvestToBatte()
     {
-        SceneManager.LoadScene("BattleScene1018");
+        SceneManager.LoadScene("BattleScene1020");
     }
 }

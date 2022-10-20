@@ -13,6 +13,6 @@ public class BacktoScan : MonoBehaviour
 
     void SwitchScene()
     {
-        SceneManager.LoadScene("MainScene1018");
+        SceneManager.LoadScene("MainScene1020");
     }
 }
