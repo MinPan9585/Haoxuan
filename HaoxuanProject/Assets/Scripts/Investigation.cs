@@ -7,16 +7,18 @@ public class Investigation : MonoBehaviour
 {
     public GameObject bg1, bg2, text1, text2, failImage, failText, act2Button, failButton;
     public Sprite buttonWhite, buttonBlue;
-    int successRate = 20;
+    int successRate = 60;
 
     void Start()
     {
         this.GetComponent<Button>().onClick.AddListener(Judge);
+
         //successRate = skillPoint;
     }
 
     void Judge()
     {
+        AudioManager.instance.PlaySoundFX();
         this.GetComponent<Image>().sprite = buttonWhite;
         Invoke("SwitchBackToBlue", 0.1f);
 

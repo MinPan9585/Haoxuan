@@ -14,6 +14,8 @@ public class InvestToBattle : MonoBehaviour
 
     void FromInvestToBatte()
     {
+        AudioManager.instance.PlaySoundFX();
+        AudioManager.instance.PlayBattleMusic();
         SceneManager.LoadScene("BattleScene1020");
     }
 }

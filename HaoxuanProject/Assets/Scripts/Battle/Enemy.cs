@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public int dir = 1;
     public float xSpeed;
     public float rotationSpeed;
+    public GameObject haloGetHit;
 
     void Start()
     {
@@ -15,7 +17,15 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position -= new Vector3(xSpeed * Time.deltaTime, 0, 0);
+        transform.position -= new Vector3(xSpeed * dir * Time.deltaTime, 0, 0);
         transform.Rotate(new Vector3(0, 0, rotationSpeed * Time.deltaTime));
+
+        if (Mathf.Abs(transform.position.x - 0) <= 0.1f)
+        {
+            //Debug.Log("enemy hit player");
+            Destroy(this.gameObject);
+            Instantiate(haloGetHit, Vector3.zero, Quaternion.identity);
+            GameObject.Find("Player").GetComponent<PlayerController>().LoseHealth();
+        }
     }
 }

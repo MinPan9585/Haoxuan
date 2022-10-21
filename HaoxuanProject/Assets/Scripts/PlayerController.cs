@@ -7,6 +7,20 @@ public class PlayerController : MonoBehaviour
 {
     private bool pressHeld = false;
     public Animator playereAnim;
+    public int health = 10;
+
+    public void LoseHealth()
+    {
+        health -= 1;
+    }
+
+    void Update()
+    {
+        if (health == 0)
+        {
+            //play dead;
+        }
+    }
 
     public void SingleHit(InputAction.CallbackContext context)
     {
@@ -15,7 +29,7 @@ public class PlayerController : MonoBehaviour
         {
             //执行攻击
             playereAnim.SetTrigger("hit");
-
+            AudioManager.instance.PlaySoundFX();
 
             Debug.Log("you hit screen once...");
         }
