@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainScene1016.unity
-    guid: 6ca6fc5913413dd43865da48e18cb7d1
+    path: Assets/Scenes/MainScene1020.unity
+    guid: bbdef2495af857841a956815888758ed
   - enabled: 1
-    path: Assets/Scenes/InvestigationScene1016.unity
-    guid: c9a45943d0db6e8488440a757996be8f
+    path: Assets/Scenes/InvestigationScene1020.unity
+    guid: 4c63a393fef2610419ba6c85aa0d36ee
   - enabled: 1
-    path: Assets/Scenes/BattleScene1016.unity
-    guid: 2b1871ac2c27d514998a1e86b6916b38
+    path: Assets/Scenes/BattleScene1020.unity
+    guid: 3b25d21f1bc3c604bb62abd901da0971
   m_configObjects: {}
