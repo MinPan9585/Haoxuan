@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private bool pressHeld = false;
     public Animator playereAnim;
     public int health = 10;
+    public GameObject haloSuccess;
 
     public void LoseHealth()
     {
@@ -31,18 +32,21 @@ public class PlayerController : MonoBehaviour
             playereAnim.SetTrigger("hit");
             AudioManager.instance.PlaySoundFX();
 
-            Debug.Log("you hit screen once...");
+            Collider2D[] nearbyEnemies = Physics2D.OverlapCircleAll(Vector2.zero, 6f);
+            if (nearbyEnemies.Length >= 1)
+            {
+                Destroy(nearbyEnemies[0].gameObject);
+                Instantiate(haloSuccess, Vector3.zero, Quaternion.identity);
+            }
+
+
+            //Debug.Log("you hit screen once...");
         }
     }
 
     public void LongPress(InputAction.CallbackContext context)
     {
         //大敌人
-        if (context.performed)
-        {
-            Debug.Log("you long pressed screen once");
-            pressHeld = true;
-        }
         if (context.canceled && pressHeld)
         {
             //执行攻击

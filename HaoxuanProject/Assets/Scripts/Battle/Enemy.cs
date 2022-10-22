@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour
     public float xSpeed;
     public float rotationSpeed;
     public GameObject haloGetHit;
+    public Sprite redCircle;
+    public Sprite blueCircle;
 
     void Start()
     {
@@ -23,9 +25,17 @@ public class Enemy : MonoBehaviour
         if (Mathf.Abs(transform.position.x - 0) <= 0.1f)
         {
             //Debug.Log("enemy hit player");
-            Destroy(this.gameObject);
+
             Instantiate(haloGetHit, Vector3.zero, Quaternion.identity);
             GameObject.Find("Player").GetComponent<PlayerController>().LoseHealth();
+            GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = redCircle;
+            Invoke("BackBlue", 0.15f);
         }
+    }
+
+    void BackBlue()
+    {
+        GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = blueCircle;
+        Destroy(this.gameObject);
     }
 }
