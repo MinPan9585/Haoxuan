@@ -2806,6 +2806,30 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
+      propertyPath: ShapeModule.type
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
+      propertyPath: ShapeModule.arc.mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
+      propertyPath: ShapeModule.radius.mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
+      propertyPath: ShapeModule.placementMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
+      propertyPath: ShapeModule.m_MeshSpawn.mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 0.1
       objectReference: {fileID: 0}
