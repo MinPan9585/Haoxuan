@@ -18,6 +18,7 @@ public class BattleManager : MonoBehaviour
         {
             //gameover
             successPanel.SetActive(true);
+            AudioManager.instance.PlayMainMusic();
             isGameOver = true;
         }
     }

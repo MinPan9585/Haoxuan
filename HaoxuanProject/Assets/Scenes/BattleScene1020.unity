@@ -1037,7 +1037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 103ab2d674efbde418fb1d6bdddd2036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameDuration: 12
+  gameDuration: 20
   successPanel: {fileID: 55783581}
   isGameOver: 0
 --- !u!1 &1864485393
