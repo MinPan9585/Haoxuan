@@ -930,7 +930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &362847648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1747,6 +1747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133150e5a94bad24ab15772a58f1e715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Image: {fileID: 1562108089}
   Absorb: {fileID: 1459388564}
   Particle1: {fileID: 627903440}
   Particle2: {fileID: 864670728}
@@ -1754,9 +1755,7 @@ MonoBehaviour:
   Particle4: {fileID: 321793318}
   Particle5: {fileID: 1731083138}
   Particle6: {fileID: 1784615963}
-  Event: {fileID: 1562108089}
   Rotate: {fileID: 586469742}
-  SlideIn: {fileID: 1562108093}
 --- !u!114 &586469745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1787,7 +1786,19 @@ MonoBehaviour:
     m_ActionId: 97df06ca-0e93-4de7-9921-404476b41550
     m_ActionName: Combat/SingleHit[/Keyboard/space,/Device Simulator Touchscreen/press]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 586469744}
+        m_TargetAssemblyTypeName: MainScenePlayer, Assembly-CSharp
+        m_MethodName: LongPress
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: b2728a4f-142d-4989-915d-0113783a414c
     m_ActionName: Combat/LongPress[/Keyboard/space,/Device Simulator Touchscreen/press]
   m_NeverAutoSwitchControlSchemes: 0
@@ -2016,7 +2027,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &793701557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2745,7 +2756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1168509676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2886,6 +2897,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2169151414222700571, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
+      propertyPath: prewarm
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
@@ -3109,7 +3124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1562108090
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3129,7 +3144,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2183, y: 52}
+  m_AnchoredPosition: {x: -2190, y: 70}
   m_SizeDelta: {x: 1244.8057, y: 1032.5936}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1562108091
@@ -3400,6 +3415,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
+      propertyPath: lengthInSec
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169151414222700572, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
       propertyPath: NoiseModule.frequency
       value: 0.8
       objectReference: {fileID: 0}
@@ -3441,7 +3464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2169151414222700574, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
       propertyPath: m_Name
-      value: Particle System (5)
+      value: Absorb
       objectReference: {fileID: 0}
     - target: {fileID: 2169151414222700574, guid: 2c6a92f610a62cb48b9e857dc543b2ff, type: 3}
       propertyPath: m_IsActive
