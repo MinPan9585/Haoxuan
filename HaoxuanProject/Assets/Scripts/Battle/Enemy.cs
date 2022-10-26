@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
             Instantiate(haloGetHit, Vector3.zero, Quaternion.identity);
             GameObject.Find("Player").GetComponent<PlayerController>().LoseHealth();
             GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = redCircle;
-            Invoke("BackBlue", 0.3f);
+            Invoke("BackBlue", 0.18f);
         }
     }
 
