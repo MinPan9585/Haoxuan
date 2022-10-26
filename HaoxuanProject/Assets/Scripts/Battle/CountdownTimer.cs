@@ -2,18 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 
 public class CountdownTimer : MonoBehaviour
 {
-    public Text txtTimer;
+    public TMP_Text txtTimer;
     public float second;
 
     private void Start()
     {
-        // 1.查找组件引用
-        txtTimer = this.GetComponent<Text>();
-        // 重复调用（被执行的方法名称，第一次执行时间，每次执行间隔时间）
+        txtTimer = this.GetComponent<TMP_Text>();
         InvokeRepeating("Timer", 1, 1);
     }
 
@@ -27,7 +25,6 @@ public class CountdownTimer : MonoBehaviour
             txtTimer.color = Color.red;
             if (second <= 0)
             {
-                // 取消调用
                 CancelInvoke("Timer");
             }
         }
